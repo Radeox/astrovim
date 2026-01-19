@@ -2,18 +2,6 @@
 return {
   "AstroNvim/astrocommunity",
 
-  -- Everforest Theme
-  {
-    "sainnhe/everforest",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      vim.g.everforest_background = "hard"
-      vim.g.everforest_enable_italic = false
-      vim.cmd "colorscheme everforest"
-    end,
-  },
-
   -- Copilot
   { import = "astrocommunity.recipes.ai" },
   { import = "astrocommunity.completion.copilot-lua" },
@@ -48,4 +36,9 @@ return {
 
   -- Bracket Rainbow
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+
+  -- Mini.nvim
+  {
+    "echasnovski/mini.nvim",
+  },
 }

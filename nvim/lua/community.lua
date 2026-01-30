@@ -2,10 +2,6 @@
 return {
   "AstroNvim/astrocommunity",
 
-  -- Copilot
-  { import = "astrocommunity.recipes.ai" },
-  { import = "astrocommunity.completion.copilot-lua" },
-
   -- Override splash
   {
     "folke/snacks.nvim",
@@ -38,7 +34,5 @@ return {
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
 
   -- Mini.nvim
-  {
-    "echasnovski/mini.nvim",
-  },
+  { "echasnovski/mini.nvim" },
 }

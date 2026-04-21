@@ -11,12 +11,3 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = "*",
   callback = function() vim.opt_local.formatoptions:remove { "r", "o" } end,
 })
-
--- Configure Intelephense LSP
-local lspconfig = require "lspconfig"
-lspconfig.intelephense.setup {
-  -- You can set any specific configuration options here if needed
-  init_options = {
-    globalStoragePath = vim.fn.stdpath "data" .. "/intelephense",
-  },
-}
